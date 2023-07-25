@@ -1,12 +1,12 @@
 :root {
-  --gray: #434455;
+  --gray: #var(--gray);
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
 }
 
 body {
   background-color: #ffffff;
-  color: #434455;
+  color: var(--gray);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -16,7 +16,7 @@ header {
 }
 footer {
   background-color: #2e2f42;
-  color: #f4f4fd;
+  color: var(--cloud);
   /* width: 1440px;
   height: 312px; */
 }
@@ -57,14 +57,14 @@ footer {
   letter-spacing: 0.02em;
 }
 .features-paragraph {
-  color: #434455;
+  color: var(--gray);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .people-paragraph {
-  color: #434455;
+  color: var(--gray);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -110,8 +110,11 @@ footer {
 .list {
   list-style: none;
 }
-.sp {
+.head-studio {
   color: #2e2f42;
+}
+.foo-studio {
+  color: var(--cloud);
 }
 .nav_list {
   font-weight: 500;
